@@ -9,8 +9,10 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    autoHideMenuBar: true,
+    titleBarStyle: 'hidden',
+    titleBarOverlay: 'hidden',
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
     }
   })
 
