@@ -2,7 +2,7 @@
   "name": "healthy-life",
   "version": "1.0.0",
   "description": "School Project - LabSoftware",
-  "main": "js/main.js",
+  "main": "src/js/main.js",
   "scripts": {
     "start": "electron ."
   },
