@@ -49,25 +49,23 @@ li {
 main {
   display: flex;
   justify-content: space-between;
-}
-
-main img {
-  width: 50rem;
+  
 }
 
 aside {
+  margin: auto;
+  padding-left: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 7rem;
 }
 
 aside h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 aside strong {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--cyan-second);
   margin-top: 1rem;
 }
@@ -89,11 +87,21 @@ aside button {
   cursor: pointer;
   margin-top: 2rem;
   border: none;
-  font-size: larger;
+  font-size: 1.45em;
+  font-weight: bold;
 }
 
 aside button:hover {
   background-color: var(--cyan-second);
   transition: .3s;
   color: #fff;
+}
+
+article {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+article img{
+  height: 700px;
 }
