@@ -10,15 +10,19 @@ const createWindow = () => {
     width: 800,
     height: 600,
     autoHideMenuBar: true,
-    titleBarStyle: 'hidden',
-    titleBarOverlay: 'hidden',
     webPreferences: {
     }
   })
-
   // and load the index.html of the app.
   mainWindow.loadFile('./src/index.html')
-
+  
+/*   mainWindow.webContents.openDevTools();
+  mainWindow.webContents.on('devtools-opened', () => {
+    setImmediate(() => {
+        // do whatever you want to do after dev tool completely opened here
+        mainWindow.focus();
+    });
+  }); */
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 }
