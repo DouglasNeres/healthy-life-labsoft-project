@@ -13,7 +13,6 @@
 
 body {
   background: var(--cyan-primary);
-  background: linear-gradient(90deg, rgba(0, 156, 169, 1) 0%, rgba(5, 65, 82, 1) 98%);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -39,13 +38,16 @@ nav {
 
   font-size: larger;
 
-
 }
 
 ul{
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+ul a{
+  text-decoration: none;
 }
 
 ul img{
