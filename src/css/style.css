@@ -13,37 +13,59 @@
 
 body {
   background: var(--cyan-primary);
-  background: linear-gradient(90deg, rgba(0, 156, 169, 1) 0%, rgba(5, 65, 82, 1) 98%);
   font-family: 'Roboto', sans-serif;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header img{
+  height: 100px;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 30px 90px;
-}
 
-nav img {
-  width: 230px;
-}
-
-ul {
-  display: flex;
   background-color: var(--light-primary);
   width: 80rem;
   height: 3.5rem;
   padding: 10px 50px;
   border-radius: 25px;
+
+  font-size: larger;
+
+}
+
+ul{
+  display: flex;
   align-items: center;
   gap: 2rem;
-  font-size: larger;
+}
+
+ul a{
+  text-decoration: none;
+}
+
+ul img{
+  height: 40px;
+}
+
+ul div{
+  margin-left: 40rem;
+  display: flex;
+  gap: 1rem;  
 }
 
 li {
   color: var(--cyan-second);
-  cursor: pointer;
   list-style: none;
+
+  display: flex;
+  
 }
 
 main {
