@@ -71,6 +71,7 @@ li {
 main {
   display: flex;
   justify-content: space-between;
+  /* padding-top: 70px; */
   
 }
 
@@ -117,6 +118,19 @@ aside button:hover {
   background-color: var(--cyan-second);
   transition: .3s;
   color: #fff;
+}
+
+
+
+.imgs img{
+  height: 50px;
+}
+
+.imgs{
+  display: flex;
+  gap: 2rem;
+  padding-top: 50px;
+  padding-left: 20px;
 }
 
 article {
