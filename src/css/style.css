@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marmelad&display=swap");
 
 * {
   padding: 0;
@@ -11,6 +11,7 @@
   --cyan-primary: #009ca9;
   --cyan-second: #054152;
   --light-primary: #d9d9d9;
+  --light-secondary: #d9f5f5;
 }
 
 body {
@@ -42,7 +43,7 @@ ul {
   gap: 2rem;
 }
 
-ul a {
+a {
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -63,7 +64,21 @@ li {
   display: flex;
 }
 
+li:hover {
+  transition: 0.3s ease-in-out;
+  color: var(--cyan-primary);
+}
+
 main {
+  display: flex;
+}
+
+.division-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-main {
   display: flex;
 }
 
@@ -76,7 +91,7 @@ main {
   width: 10rem;
 }
 
-#cursiveBarIcon{
+#cursiveBarIcon {
   left: 0rem;
   bottom: 3rem;
   width: 6rem;
@@ -89,13 +104,28 @@ main {
   transform: rotate(180deg);
 }
 
+#iconRounded {
+  position: absolute;
+  width: 10rem;
+  right: 5rem;
+  top: 90rem;
+}
+
+#iconRotate {
+  position: absolute;
+  top: 65rem;
+  left: 5rem;
+  width: 10rem;
+  transform: rotate(180deg);
+}
+
 #points {
   left: 45rem;
   bottom: 2rem;
   width: 7rem;
 }
 
-aside {
+.aside-top {
   margin: auto;
   padding-left: 100px;
   display: flex;
@@ -103,24 +133,25 @@ aside {
   justify-content: center;
 }
 
-aside h1 {
+.aside-top h1,
+article h1 {
   font-size: 5rem;
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-aside strong {
+.aside-top strong {
   font-size: 2.5rem;
   color: var(--cyan-second);
   margin-top: 1rem;
 }
 
-aside p {
+.aside-top p {
   font-size: 2rem;
   line-height: 2.5rem;
   margin-top: 3rem;
 }
 
-aside button {
+.aside-top button {
   background-color: var(--light-primary);
   color: var(--cyan-second);
   width: 260px;
@@ -133,10 +164,95 @@ aside button {
   font-size: 1.45em;
 }
 
-aside button:hover {
+.aside-top button:hover {
   background-color: var(--cyan-second);
   transition: 0.3s;
   color: #fff;
+}
+
+.secondSession {
+  background-color: var(--light-secondary);
+  display: flex;
+  padding: 10rem 3rem;
+}
+
+.aside-down,
+.article-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-article {
+  position: relative;
+  right: 10rem;
+}
+
+.aside-down img {
+  position: relative;
+  right: 5rem;
+}
+
+.aside-down img,
+.article-down img {
+  width: 322px;
+  height: 322px;
+}
+
+.aside-down img {
+  margin-bottom: 5rem;
+}
+
+.article-down img {
+  margin-top: 5rem;
+}
+
+.aside-down h1,
+.aside-down p,
+.article-down h1,
+.article-down p {
+  color: var(--cyan-second);
+}
+
+.aside-down h1,
+.article-down h1 {
+  font-size: 5rem;
+}
+
+.aside-down p,
+.article-down p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.aside-down p {
+  width: 60rem;
+}
+
+.aside-down a,
+.article-down a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13rem;
+  height: 2.25rem;
+  border-radius: 1.5rem;
+  background-color: var(--cyan-primary);
+}
+
+.aside-down a:hover,
+.article-down a:hover {
+  background-color: var(--cyan-second);
+  transition: 0.3s ease-in-out;
+}
+
+.informations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .imgs img {
