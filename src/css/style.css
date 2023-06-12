@@ -249,3 +249,11 @@ article img {
   width: 100%;
   height: 90vh;
 }
+
+footer{
+  background-color: var(--cyan-second);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}

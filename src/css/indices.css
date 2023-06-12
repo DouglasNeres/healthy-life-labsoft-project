@@ -1,5 +1,5 @@
 .indices{
-  padding: 0 3rem;
+  padding: 0 8rem;
 }
 
 header {
@@ -82,4 +82,63 @@ li:hover {
   background-color: var(--cyan-second);
   opacity: .6;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inputField{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 5rem 0;
+}
+
+.inputField input{
+  height: 3.5rem;
+  width: 12rem;
+  border-radius: 1rem;
+  border: none;
+  color: var(--cyan-second);
+}
+
+.inputField input::placeholder, .inputField input{
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.inputButton{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputButton button{
+  width: 9rem;
+  height: 3rem;
+  border-radius: .8rem;
+  background-color: var(--cyan-second);
+  border: none;
+  cursor: pointer;
+}
+
+.inputButton button:hover{
+  background-color: #07333f;
+  text-decoration: underline;
+}
+
+#resultField{
+  display: flex;
+  align-items: center;
+  width: 14rem;
+  height: 4rem;
+  background-color: var(--light-primary);
+  border-radius: 2rem;
+  color: var(--cyan-second);
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+aside img{
+  width: 650px;
+  height: 380px;
 }

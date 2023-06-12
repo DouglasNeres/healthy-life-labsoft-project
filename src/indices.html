@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/indices.css" />
     <title>Índices</title>
+    <script src="js/calcs.js" defer></script>
   </head>
   <body class="indices">
     <header>
@@ -34,7 +35,10 @@
     </header>
 
     <main class="main-indices">
-      <span>IMC <div class="straight"></div></span>
+      <span
+        >IMC
+        <div class="straight"></div
+      ></span>
       <h1>Cálculo IMC</h1>
       <p>
         IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
@@ -46,6 +50,31 @@
         índices da tabela. Importante: siga os exemplos e use pontos como
         separadores.
       </p>
+
+      <div class="inputField">
+        <div style="display: flex; justify-content: space-between;">
+        <article style="display: flex; flex-direction: column; gap: 5rem;">
+          <div style="display: flex; gap: 5rem;">
+          <div class="inputButton">
+            <label for="">Peso (ex: 70.5)</label>
+            <input type="number" id="weight" placeholder="Peso" />
+            <button onclick="calcIMC()" class="btnCalc">Calcular</button>
+          </div>
+          <div class="inputButton">
+            <label for="">Altura (ex: 1.70)</label>
+            <input type="number" id="height" placeholder="Altura" />
+            <button onclick="clearFields()">Limpar</button>
+          </div>
+        </div>
+          <div id="resultField">Seu IMC é: <div style="color: var(--cian-second); padding: 0 .5rem;" id="result"></div></div>
+        </article>
+        <aside>
+          <img src="assets/imgs/tableIMC.png" alt="">
+        </aside>
+      </div>
+      </div>
+      <img src="assets/3pontos.svg" alt="">
+      <img src="assets/cursive-bar-icon.svg" alt="">
     </main>
   </body>
 </html>
