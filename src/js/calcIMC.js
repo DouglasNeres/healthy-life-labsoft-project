@@ -12,3 +12,4 @@ function clearFields() {
   document.getElementById("height").value = "";
   document.getElementById("result").innerHTML = "";
 }
+
